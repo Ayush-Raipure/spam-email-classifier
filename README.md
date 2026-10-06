@@ -4,9 +4,11 @@ A machine learning project that classifies text messages as **spam** or **ham** 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ayush-Raipure/spam-email-classifier/blob/main/spam_email_classifier.ipynb)
 
+
 ## Overview
 
 The notebook loads a labelled SMS dataset, converts the text into numerical features, trains two models, compares them, and lets you test your own messages.
+
 
 **Pipeline:**
 
@@ -26,6 +28,7 @@ Source used in the notebook:
 `https://raw.githubusercontent.com/justmarkham/pycon-2016-tutorial/master/data/sms.tsv`
 
 
+
 ## Tech Stack
 
 - Python 3
@@ -33,10 +36,6 @@ Source used in the notebook:
 - scikit-learn
 - matplotlib
 
-
-### Run in Google Colab
-
-Click the **Open in Colab** badge above and run all cells.
 
 ### Run locally
 

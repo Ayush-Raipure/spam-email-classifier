@@ -17,12 +17,14 @@ The notebook loads a labelled SMS dataset, converts the text into numerical feat
 5. Evaluate with accuracy, classification report, and confusion matrices
 6. Predict on custom messages
 
+
 ## Dataset
 
 SMS Spam Collection: about 5,572 messages labelled `ham` or `spam`. The data is imbalanced (spam is roughly 13% of messages), so the train/test split is stratified and recall on the spam class is worth checking alongside accuracy.
 
 Source used in the notebook:
 `https://raw.githubusercontent.com/justmarkham/pycon-2016-tutorial/master/data/sms.tsv`
+
 
 ## Tech Stack
 
@@ -31,7 +33,6 @@ Source used in the notebook:
 - scikit-learn
 - matplotlib
 
-## Getting Started
 
 ### Run in Google Colab
 
@@ -53,6 +54,7 @@ jupyter notebook
 
 Then open `spam_email_classifier.ipynb` and run all cells.
 
+
 ## Usage
 
 After training, test any message with:
@@ -64,6 +66,7 @@ predict_spam("Congratulations! You've won a prize. Click here to claim!", model_
 
 Available models: `"Naive Bayes"` and `"SVM"`.
 
+
 ## Results
 
 Run the notebook to see accuracy, precision, recall, and confusion matrices for both models. Add your numbers here:
@@ -73,6 +76,7 @@ Run the notebook to see accuracy, precision, recall, and confusion matrices for 
 | Naive Bayes | -        | -              | -           |
 | SVM         | -        | -              | -           |
 
+
 ## Possible Improvements
 
 - Use unigrams + bigrams (`ngram_range=(1, 2)`) and keep stop words
@@ -80,20 +84,3 @@ Run the notebook to see accuracy, precision, recall, and confusion matrices for 
 - Use cross-validation for a more reliable estimate
 - Test other models such as Logistic Regression or Random Forest
 - Note: this dataset is UK SMS data from around 2008, so modern phishing-style messages may be misclassified
-
-## Project Structure
-
-```
-spam-email-classifier/
-├── spam_email_classifier.ipynb
-└── README.md
-```
-
-## Author
-
-**Ayush Raipure**
-GitHub: [@Ayush-Raipure](https://github.com/Ayush-Raipure)
-
-## License
-
-This project is open source and available for learning and personal use.
